@@ -56,10 +56,16 @@ form{
     border-bottom: 1px solid #6200ea;
     padding: 0.7em 1em;
     color: #ccc;
+    transition: 0.3s;
 
     display: flex;
     justify-content: space-between;
 }
+
+.task-list-item:hover{
+    background: #2b383f;
+}
+
 
 .task-done{
     background: #2b383f;
