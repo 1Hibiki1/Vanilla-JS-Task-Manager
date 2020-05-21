@@ -40,6 +40,7 @@ form{
 .btn{
     flex: 1;
     margin-left: 2em;
+    transition: 0.3s;
 }
 
 .card h5{
