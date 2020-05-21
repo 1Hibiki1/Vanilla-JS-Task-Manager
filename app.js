@@ -75,7 +75,7 @@ function addTaskToList(n){
 }
 
 const stored = JSON.parse(localStorage.getItem('tasks'));
-if(stored.length > 0){
+if(stored){
     stored.forEach(el => {
         addTaskToList(el);
     });
