@@ -52,7 +52,7 @@ class Task{
 
 form.addEventListener('submit', e => {
     const store = JSON.parse(localStorage.getItem('tasks'));
-    if(store.length === 0) taskListElement.innerHTML = '';
+    if(!store) taskListElement.innerHTML = '';
     e.preventDefault();
     if(newTaskName.replace(/\s/g, '') === ''){
         alert("Task name cannot be empty! :)");
