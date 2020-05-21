@@ -74,8 +74,8 @@ function addTaskToList(n){
     taskListElement.appendChild(li);
 }
 
-const stored = JSON.parse(localStorage.getItem('tasks'));
-if(stored){
+const stored = JSON.parse(localStorage.getItem('tasks')) || [];
+if(stored.length > 0){
     stored.forEach(el => {
         addTaskToList(el);
     });
