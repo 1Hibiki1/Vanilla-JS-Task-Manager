@@ -51,8 +51,6 @@ class Task{
 }
 
 form.addEventListener('submit', e => {
-    const store = JSON.parse(localStorage.getItem('tasks')) || [];
-    if(store.length === 0) taskListElement.innerHTML = '';
     e.preventDefault();
     if(newTaskName.replace(/\s/g, '') === ''){
         alert("Task name cannot be empty! :)");
@@ -63,6 +61,9 @@ form.addEventListener('submit', e => {
         input.value = '';
         return;
     }
+    const store = JSON.parse(localStorage.getItem('tasks')) || [];
+    if(store.length === 0) taskListElement.innerHTML = '';
+    
     addTaskToList(newTaskName);
     input.value = '';
     localStorage.setItem('tasks', JSON.stringify(taskList));
