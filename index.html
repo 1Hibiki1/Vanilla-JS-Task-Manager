@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Task List</title>
+</head>
+<body class="blue-grey darken-4">
+    <header>
+        <nav>
+            <div class="nav-wrapper deep-purple accent-4 z-depth-5" style="padding: 0 4em;">
+              <a href="#" class="brand-logo">Task list</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="card" style="padding: 1em 3em; margin: 6em 0 4em 0;">
+            <form>
+                <div class="input-field">
+                    <input type="text" class="validate" style="color: #ccc">
+                    <label for="task_name">Task Name</label>
+                </div>
+                <button class="btn deep-purple accent-4 z-depth-3" type="submit">Add Item</button>
+            </form>
+        </div>
+        <div class="card">
+            <h5>Task List</h5>
+            <ul class="task-list">
+            </ul>
+        </div>
+    </main>
+    <footer>
+        © 2020 Coolest Task List :)
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

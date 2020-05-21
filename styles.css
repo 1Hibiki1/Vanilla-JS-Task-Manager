@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 90%;
+    max-width: 900px;
+    background: #263238;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.3),
+                -0.5em -0.5em 1em rgba(255, 255, 255, 0.07);
+    border-radius: 0.5em;
+    padding: 1em 3em;
+    padding-bottom: 2em;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-field{
+    flex: 3;
+}
+.btn{
+    flex: 1;
+    margin-left: 2em;
+}
+
+.card h5{
+    color: #ccc;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.task-list:first-child{
+    border-top: 1px solid #6200ea;
+}
+
+.task-list-item{
+    border-bottom: 1px solid #6200ea;
+    padding: 0.7em 1em;
+    color: #ccc;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-done{
+    background: #2b383f;
+}
+
+.strthrough{
+    text-decoration: line-through;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.close-button{
+    font-size: 1.5rem;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.close-button:hover{
+    color: rgb(255, 67, 67);
+}
+
+.close-button:focus{
+    background: transparent;
+}
+
+footer{
+    padding: 2em;
+    text-align: center;
+    margin-top: 3em;
+    color: #777;
+}

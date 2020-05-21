@@ -1,0 +1,11 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "A simple vanilla JS task manager.",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Hibiki",
+  "license": "MIT",
+  "devDependencies": {}
+}
