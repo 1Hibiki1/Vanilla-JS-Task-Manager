@@ -22,8 +22,8 @@ main{
     width: 90%;
     max-width: 900px;
     background: #263238;
-    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.3),
-                -0.5em -0.5em 1em rgba(255, 255, 255, 0.07);
+    box-shadow:  12px 12px 38px #1b2428, 
+             -12px -12px 38px #314048;
     border-radius: 0.5em;
     padding: 1em 3em;
     padding-bottom: 2em;
